@@ -1,0 +1,48 @@
+{
+  "name": "vite-library-starter",
+  "private": true,
+  "version": "0.0.0",
+  "author": {
+    "name": "Niclas",
+    "url": "https://github.com/Niclassg"
+  },
+  "keywords": [
+    "vite",
+    "library",
+    "starter",
+    "typescript"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vitest": "^1.1.0"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
